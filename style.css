@@ -124,9 +124,11 @@ section{padding:clamp(48px,7vw,84px) 0}
 /* Services — grouped bold lists */
 .services{background:var(--cream)}
 .services-groups{
-  display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
-  gap:30px 44px;max-width:900px;margin:0 auto;text-align:left;
+  display:grid;grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:30px 44px;max-width:940px;margin:0 auto;text-align:left;
 }
+@media (max-width:820px){ .services-groups{grid-template-columns:repeat(2,minmax(0,1fr));} }
+@media (max-width:520px){ .services-groups{grid-template-columns:1fr;} }
 .svc-group-title{
   margin:0 0 12px;font-weight:800;font-size:1.15rem;color:var(--ink);
 }
