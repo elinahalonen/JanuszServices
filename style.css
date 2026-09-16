@@ -78,16 +78,17 @@ section{padding:clamp(48px,7vw,84px) 0}
 .section-title{
   font-family:"Kalam",cursive;font-weight:700;
   font-size:clamp(2rem,4.5vw,2.9rem);margin:0 0 22px;line-height:1.1;
+  text-align:center;
 }
 .section-title::after{
   content:"";display:block;width:64px;height:5px;background:var(--mustard);
-  border-radius:100px;margin-top:10px;
+  border-radius:100px;margin:10px auto 0;
 }
 
 /* About */
-.about{background:var(--white)}
-.about-lead{font-size:1.35rem;font-weight:700;max-width:44ch;margin:0 0 14px}
-.about-body{font-size:1.08rem;color:var(--ink-soft);max-width:56ch;margin:0}
+.about{background:var(--white);text-align:center}
+.about-lead{font-size:1.35rem;font-weight:700;max-width:46ch;margin:0 auto 14px}
+.about-body{font-size:1.08rem;color:var(--ink-soft);max-width:58ch;margin:0 auto}
 
 /* Services */
 .services{background:var(--cream)}
@@ -118,8 +119,8 @@ section{padding:clamp(48px,7vw,84px) 0}
 .pricing-note{margin:0;color:#cfcfcf;font-weight:600}
 
 /* Contact */
-.contact{background:var(--white)}
-.contact-lead{font-size:1.15rem;color:var(--ink-soft);max-width:48ch;margin:0 0 26px}
+.contact{background:var(--white);text-align:center}
+.contact-lead{font-size:1.15rem;color:var(--ink-soft);max-width:48ch;margin:0 auto 26px}
 .contact-cards{
   display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin-bottom:26px;
 }
