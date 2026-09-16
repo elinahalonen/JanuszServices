@@ -27,7 +27,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=3">
+<link rel="stylesheet" href="style.css?v=5">
 </head>
 <body>
 
@@ -44,14 +44,15 @@
 
   <!-- HERO -->
   <section class="hero">
-    <h1 class="visually-hidden" data-i18n="tagline">Gardening is the work of a lifetime.</h1>
-    <img class="hero-banner" src="images/hero.jpg"
-         alt="Janusz Services — Gardening is the work of a lifetime. Illustration of Janusz, a bearded gardener, surrounded by plants and flowers." />
-    <div class="wrap hero-cta">
-      <p class="hero-sub" data-i18n="heroSub">Professional, reliable gardening for homes and businesses across Den Haag.</p>
-      <div class="hero-actions">
-        <a class="btn btn-primary" href="#contact" data-i18n="ctaContact">Get in touch</a>
-        <a class="btn btn-ghost" href="#services" data-i18n="ctaServices">See services</a>
+    <div class="wrap hero-inner">
+      <div class="hero-text">
+        <p class="hero-kicker" data-i18n="kicker">Gardener · The Hague</p>
+        <h1 class="hero-title" data-i18n="tagline">Gardening is the work of a lifetime.</h1>
+        <p class="hero-sub" data-i18n="heroSub">Professional, reliable gardening for homes and businesses across Den Haag.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#contact" data-i18n="ctaContact">Get in touch</a>
+          <a class="btn btn-ghost" href="#services" data-i18n="ctaServices">See services</a>
+        </div>
       </div>
     </div>
   </section>
@@ -113,12 +114,18 @@
     </div>
   </section>
 
+  <!-- decorative floral strip -->
+  <div class="floral-strip" role="presentation">
+    <img src="images/floral-strip.png" alt="" aria-hidden="true"
+         onerror="this.closest('.floral-strip').style.display='none'" />
+  </div>
+
   <footer class="site-footer">
     <div class="wrap">
       <p>&copy; <span id="year"></span> Janusz Services · <span data-i18n="footerTag">The Hague</span></p>
     </div>
   </footer>
 
-  <script src="script.js?v=3"></script>
+  <script src="script.js?v=5"></script>
 </body>
 </html>

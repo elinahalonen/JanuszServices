@@ -1,22 +1,18 @@
-HERO IMAGE
-==========
-Drop Janusz's banner artwork here named exactly:  hero.jpg
+IMAGES USED BY THE SITE
+=======================
 
-The homepage hero automatically uses images/hero.jpg as its background
-(behind a mustard fade so the black title stays readable). If no file is
-present, the hero shows a solid mustard-yellow band instead.
+1) hero-figure.png   — the hero artwork: Janusz + botanicals with the figure
+                       anchored to the RIGHT and empty space on the LEFT (that's
+                       where the text sits). White OR transparent background both
+                       work (the hero is white). Wide landscape, ~1700x950.
 
-Recommended: a wide landscape image, roughly 1600x900px, JPG, under ~400KB.
-The wide yellow botanical banner works perfectly.
+2) floral-strip.png  — the slim decorative flower band shown just above the footer.
+                       Very wide and short (e.g. ~2000x250). White or transparent bg.
 
+3) social.jpg        — OPTIONAL. Link-preview card for WhatsApp/Facebook shares.
+                       1200x630. Can be any nice on-brand image.
 
-SOCIAL SHARE IMAGE
-==================
-Drop a second file here named exactly:  social.jpg
+If a file is missing the site still works: the hero falls back to plain white and
+the floral strip simply hides itself.
 
-This is the preview card shown when the link is shared on WhatsApp,
-Facebook, Messenger, etc. Ideal size 1200x630px, JPG.
-
-Easiest option: just save the same yellow botanical banner as social.jpg
-too (its shape is close enough). If no social.jpg is present, shared links
-simply won't show a preview image — everything else still works.
+Older/unused: hero.jpg (the original baked-in banner) is no longer referenced.
