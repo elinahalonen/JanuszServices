@@ -167,7 +167,7 @@ section{padding:clamp(48px,7vw,84px) 0}
 .contact-location{font-weight:700;font-size:1.05rem;margin:0}
 
 /* Decorative floral strip */
-.floral-strip{background:var(--white);line-height:0;overflow:hidden}
+.floral-strip{background:var(--mustard);line-height:0;overflow:hidden}
 .floral-strip img{width:100%;height:auto;display:block;max-height:150px;object-fit:cover}
 
 /* Footer */
