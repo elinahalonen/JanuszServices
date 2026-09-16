@@ -45,34 +45,23 @@ a{color:inherit}
 .lang-btn.is-active{color:var(--ink);text-decoration:underline;text-decoration-color:var(--mustard);text-decoration-thickness:3px;text-underline-offset:4px}
 .lang-sep{color:#ccc}
 
-/* ---------- Hero ---------- */
-.hero{position:relative;background:var(--mustard);overflow:hidden}
-.hero-media{
-  position:absolute;inset:0;
-  background:var(--mustard) url("images/hero.jpg") center/cover no-repeat;
-  opacity:1;
+/* ---------- Hero (banner-led) ---------- */
+.visually-hidden{
+  position:absolute!important;width:1px;height:1px;padding:0;margin:-1px;
+  overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0;
 }
-/* white readability veil on the text side */
-.hero::after{
-  content:"";position:absolute;inset:0;
-  background:linear-gradient(90deg,rgba(245,180,23,.15) 0%,rgba(245,180,23,.55) 45%,rgba(245,180,23,.92) 100%);
-  pointer-events:none;
+.hero{background:var(--mustard);text-align:center;padding:0}
+.hero-banner{
+  display:block;width:100%;max-width:1120px;height:auto;margin:0 auto;
 }
-.hero-content{position:relative;z-index:2;padding:clamp(56px,10vw,120px) 22px;max-width:var(--wrap)}
-.hero-inner-limit{max-width:560px}
-.hero-kicker{
-  display:inline-block;margin:0 0 14px;
-  background:var(--ink);color:#fff;font-weight:800;font-size:.72rem;
-  letter-spacing:.14em;text-transform:uppercase;padding:6px 12px;border-radius:100px;
+.hero-cta{
+  padding:clamp(20px,4vw,36px) 22px clamp(32px,5vw,52px);
+  display:flex;flex-direction:column;align-items:center;gap:20px;
 }
-.hero-title{
-  margin:0 0 16px;max-width:16ch;
-  font-size:clamp(2.1rem,5.2vw,3.5rem);line-height:1.05;font-weight:800;
-  letter-spacing:-.01em;text-transform:uppercase;
-  text-wrap:balance;
+.hero-sub{
+  margin:0;max-width:40ch;font-size:1.18rem;font-weight:700;color:var(--ink);
 }
-.hero-sub{margin:0 0 28px;max-width:34ch;font-size:1.12rem;font-weight:600;color:var(--ink)}
-.hero-actions{display:flex;flex-wrap:wrap;gap:12px}
+.hero-actions{display:flex;flex-wrap:wrap;gap:12px;justify-content:center}
 
 /* ---------- Buttons ---------- */
 .btn{
