@@ -59,6 +59,8 @@ const I18N = {
     labelWhatsapp: "WhatsApp",
     labelEmail: "Email",
     labelFacebook: "Facebook",
+    labelInstagram: "Instagram",
+    workPrompt: "See photos of my recent work:",
     location: "📍 The Hague & South Holland, Netherlands",
     footerTag: "The Hague & South Holland"
   },
@@ -83,6 +85,8 @@ const I18N = {
     labelWhatsapp: "WhatsApp",
     labelEmail: "E-mail",
     labelFacebook: "Facebook",
+    labelInstagram: "Instagram",
+    workPrompt: "Bekijk foto's van mijn recente werk:",
     location: "📍 Den Haag & Zuid-Holland, Nederland",
     footerTag: "Den Haag & Zuid-Holland"
   }
@@ -94,10 +98,8 @@ function renderServices(lang){
   wrap.innerHTML = SERVICE_GROUPS.map(g => `
     <div class="svc-group">
       <h3 class="svc-group-title">${g[lang]}</h3>
-      <ul class="services-grid">
-        ${g.items.map(s =>
-          `<li><span class="svc-ico" aria-hidden="true">${s.icon}</span>${s[lang]}</li>`
-        ).join("")}
+      <ul class="services-list">
+        ${g.items.map(s => `<li>${s[lang]}</li>`).join("")}
       </ul>
     </div>`).join("");
 }

@@ -11,7 +11,7 @@
 }
 
 *{box-sizing:border-box}
-html{scroll-behavior:smooth}
+html{scroll-behavior:smooth;font-size:18px}
 body{
   margin:0;
   font-family:"Nunito",system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
@@ -121,32 +121,41 @@ section{padding:clamp(48px,7vw,84px) 0}
 .about-lead{font-size:1.35rem;font-weight:700;max-width:46ch;margin:0 auto 14px}
 .about-body{font-size:1.08rem;color:var(--ink-soft);max-width:58ch;margin:0 auto}
 
-/* Services */
+/* Services — grouped bold lists */
 .services{background:var(--cream)}
-.services-groups{display:flex;flex-direction:column;gap:34px}
+.services-groups{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+  gap:30px 44px;max-width:900px;margin:0 auto;text-align:left;
+}
 .svc-group-title{
-  margin:0 0 14px;text-align:center;
-  font-weight:800;font-size:1.2rem;color:var(--ink);
+  margin:0 0 12px;font-weight:800;font-size:1.15rem;color:var(--ink);
 }
 .svc-group-title::after{
-  content:"";display:block;width:40px;height:4px;background:var(--mustard);
-  border-radius:100px;margin:8px auto 0;
+  content:"";display:block;width:36px;height:4px;background:var(--mustard);
+  border-radius:100px;margin:8px 0 0;
 }
-.services-grid{
-  list-style:none;margin:0;padding:0;
-  display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:14px;
+.services-list{list-style:none;margin:0;padding:0}
+.services-list li{
+  font-weight:700;padding:7px 0 7px 20px;position:relative;
+  border-bottom:1px solid var(--line);
 }
-.services-grid li{
-  display:flex;align-items:center;gap:12px;
-  background:#fff;border:1px solid var(--line);border-radius:var(--radius);
-  padding:16px 18px;font-weight:700;font-size:1.02rem;
-  transition:border-color .15s ease, transform .15s ease;
+.services-list li:last-child{border-bottom:none}
+.services-list li::before{
+  content:"";position:absolute;left:2px;top:1em;
+  width:7px;height:7px;background:var(--mustard);border-radius:50%;
 }
-.services-grid li:hover{border-color:var(--mustard);transform:translateY(-2px)}
-.svc-ico{
-  flex:0 0 40px;height:40px;width:40px;display:grid;place-items:center;
-  background:var(--mustard);border-radius:12px;font-size:1.2rem;
+
+/* Social buttons (see my work) */
+.about-work{margin:28px 0 14px;font-weight:800;color:var(--ink)}
+.social-btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.btn-social{
+  display:inline-flex;align-items:center;gap:8px;text-decoration:none;
+  font-weight:800;padding:11px 22px;border-radius:100px;
+  border:2px solid var(--ink);color:var(--ink);background:#fff;
+  transition:transform .12s ease, box-shadow .12s ease;
 }
+.btn-social:hover{transform:translateY(-2px)}
+.btn-ig{background:var(--ink);color:#fff;box-shadow:0 6px 16px rgba(0,0,0,.16)}
 
 /* Pricing */
 .pricing{background:var(--ink);color:#fff;text-align:center}
