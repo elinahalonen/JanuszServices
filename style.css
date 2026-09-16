@@ -123,6 +123,15 @@ section{padding:clamp(48px,7vw,84px) 0}
 
 /* Services */
 .services{background:var(--cream)}
+.services-groups{display:flex;flex-direction:column;gap:34px}
+.svc-group-title{
+  margin:0 0 14px;text-align:center;
+  font-weight:800;font-size:1.2rem;color:var(--ink);
+}
+.svc-group-title::after{
+  content:"";display:block;width:40px;height:4px;background:var(--mustard);
+  border-radius:100px;margin:8px auto 0;
+}
 .services-grid{
   list-style:none;margin:0;padding:0;
   display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:14px;
