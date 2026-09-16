@@ -66,9 +66,10 @@ a{color:inherit}
   letter-spacing:.14em;text-transform:uppercase;padding:6px 12px;border-radius:100px;
 }
 .hero-title{
-  margin:0 0 16px;max-width:9ch;
-  font-size:clamp(2.3rem,6vw,3.9rem);line-height:1.02;font-weight:800;
+  margin:0 0 16px;max-width:16ch;
+  font-size:clamp(2.1rem,5.2vw,3.5rem);line-height:1.05;font-weight:800;
   letter-spacing:-.01em;text-transform:uppercase;
+  text-wrap:balance;
 }
 .hero-sub{margin:0 0 28px;max-width:34ch;font-size:1.12rem;font-weight:600;color:var(--ink)}
 .hero-actions{display:flex;flex-wrap:wrap;gap:12px}

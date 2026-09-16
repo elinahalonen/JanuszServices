@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" rx="14" fill="#F5B417"/>
+  <g fill="none" stroke="#1a1a1a" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+    <!-- leaf outline -->
+    <path d="M20 46 C20 30 32 18 46 18 C46 34 34 46 20 46 Z"/>
+    <!-- central vein -->
+    <path d="M23 43 L43 21"/>
+    <!-- side veins -->
+    <path d="M30 40 L34 36 M35 33 L39 29 M28 34 L31 31"/>
+  </g>
+</svg>

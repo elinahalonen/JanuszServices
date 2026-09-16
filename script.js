@@ -29,7 +29,7 @@ const I18N = {
     servicesTitle: "What I do",
     pricingLabel: "Pricing",
     pricingFrom: "From",
-    pricingUnit: "+ tax per hour",
+    pricingUnit: "+ VAT per hour",
     pricingNote: "Get in touch for a free, no-obligation quote.",
     contactTitle: "Get in touch",
     contactLead: "Tell me what your garden needs and I'll get back to you.",
