@@ -52,16 +52,16 @@ a{color:inherit}
 }
 .hero{
   position:relative;
-  background:var(--white) url("images/hero-figure.png") no-repeat right center;
+  background:var(--mustard) url("images/hero-figure.png") no-repeat right center;
   background-size:contain;
 }
-/* white veil so the left-side text stays clean over the artwork */
+/* mustard veil so the left-side text stays clean over the artwork */
 .hero::before{
   content:"";position:absolute;inset:0;pointer-events:none;
   background:linear-gradient(90deg,
-    #fff 0%, #fff 28%,
-    rgba(255,255,255,.7) 46%,
-    rgba(255,255,255,0) 62%);
+    var(--mustard) 0%, var(--mustard) 26%,
+    rgba(245,180,23,.7) 44%,
+    rgba(245,180,23,0) 60%);
 }
 .hero-inner{
   position:relative;z-index:2;
@@ -71,7 +71,7 @@ a{color:inherit}
 .hero-text{max-width:min(540px,94%)}
 .hero-kicker{
   display:inline-block;margin:0 0 14px;
-  background:var(--mustard);color:var(--ink);font-weight:800;font-size:.72rem;
+  background:var(--ink);color:#fff;font-weight:800;font-size:.72rem;
   letter-spacing:.14em;text-transform:uppercase;padding:6px 12px;border-radius:100px;
 }
 .hero-title{
@@ -79,16 +79,16 @@ a{color:inherit}
   font-size:clamp(2.1rem,5.2vw,3.5rem);line-height:1.05;font-weight:800;
   letter-spacing:-.01em;text-transform:uppercase;text-wrap:balance;color:var(--ink);
 }
-.hero-sub{margin:0 0 26px;max-width:36ch;font-size:1.14rem;font-weight:700;color:var(--ink-soft)}
+.hero-sub{margin:0 0 26px;max-width:36ch;font-size:1.14rem;font-weight:700;color:var(--ink)}
 .hero-actions{display:flex;flex-wrap:wrap;gap:12px}
 
 @media (max-width:760px){
   .hero{background-position:center bottom;background-size:118% auto;}
   .hero::before{
     background:linear-gradient(180deg,
-      #fff 0%, #fff 34%,
-      rgba(255,255,255,.75) 58%,
-      rgba(255,255,255,0) 82%);
+      var(--mustard) 0%, var(--mustard) 34%,
+      rgba(245,180,23,.75) 58%,
+      rgba(245,180,23,0) 82%);
   }
   .hero-inner{min-height:82vh;align-items:flex-start;padding-top:40px}
   .hero-text{max-width:100%}
