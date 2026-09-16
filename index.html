@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Janusz Services — Gardener in The Hague</title>
+<meta name="description" content="Professional and reliable gardening services in The Hague. Hedge cutting, tree felling, lawn care, planting and more. From €30 + tax per hour.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kalam:wght@700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a href="#" class="brand" data-i18n="brand">Janusz Services</a>
+      <nav class="lang-switch" aria-label="Language">
+        <button type="button" class="lang-btn is-active" data-lang="en" aria-pressed="true">EN</button>
+        <span class="lang-sep">/</span>
+        <button type="button" class="lang-btn" data-lang="nl" aria-pressed="false">NL</button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-media" role="img" aria-label="Illustration of Janusz surrounded by plants and flowers"></div>
+    <div class="wrap hero-content">
+      <p class="hero-kicker" data-i18n="kicker">Gardener · The Hague</p>
+      <h1 class="hero-title" data-i18n="tagline">Gardening is the work of a lifetime.</h1>
+      <p class="hero-sub" data-i18n="heroSub">Professional, reliable gardening for homes and businesses across Den Haag.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#contact" data-i18n="ctaContact">Get in touch</a>
+        <a class="btn btn-ghost" href="#services" data-i18n="ctaServices">See services</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="wrap">
+      <h2 class="section-title" data-i18n="aboutTitle">Hi, I'm Janusz</h2>
+      <p class="about-lead" data-i18n="aboutLead">I'm a gardener offering professional and reliable gardening services that meet all of your needs.</p>
+      <p class="about-body" data-i18n="aboutBody">From basic gardening for residential homes to presentation-quality displays for businesses, functions and events — I'll keep your outdoor space looking its best.</p>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="services" id="services">
+    <div class="wrap">
+      <h2 class="section-title" data-i18n="servicesTitle">What I do</h2>
+      <ul class="services-grid" id="servicesGrid"><!-- filled by script --></ul>
+    </div>
+  </section>
+
+  <!-- PRICING -->
+  <section class="pricing" id="pricing">
+    <div class="wrap pricing-inner">
+      <p class="pricing-label" data-i18n="pricingLabel">Pricing</p>
+      <p class="pricing-amount"><span data-i18n="pricingFrom">From</span> <strong>€30</strong> <span data-i18n="pricingUnit">+ tax per hour</span></p>
+      <p class="pricing-note" data-i18n="pricingNote">Get in touch for a free, no-obligation quote.</p>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="wrap">
+      <h2 class="section-title" data-i18n="contactTitle">Get in touch</h2>
+      <p class="contact-lead" data-i18n="contactLead">Tell me what your garden needs and I'll get back to you.</p>
+      <div class="contact-cards">
+        <a class="contact-card" href="tel:+31616768812">
+          <span class="contact-icon" aria-hidden="true">📞</span>
+          <span class="contact-k" data-i18n="labelPhone">Call</span>
+          <span class="contact-v">06 16768812</span>
+        </a>
+        <a class="contact-card" href="https://wa.me/31616768812" target="_blank" rel="noopener">
+          <span class="contact-icon" aria-hidden="true">💬</span>
+          <span class="contact-k" data-i18n="labelWhatsapp">WhatsApp</span>
+          <span class="contact-v">06 16768812</span>
+        </a>
+        <a class="contact-card" href="mailto:januszservices@outlook.com">
+          <span class="contact-icon" aria-hidden="true">✉️</span>
+          <span class="contact-k" data-i18n="labelEmail">Email</span>
+          <span class="contact-v">januszservices@outlook.com</span>
+        </a>
+        <a class="contact-card" href="https://www.facebook.com/profile.php?id=100063753676921" target="_blank" rel="noopener">
+          <span class="contact-icon" aria-hidden="true">👍</span>
+          <span class="contact-k" data-i18n="labelFacebook">Facebook</span>
+          <span class="contact-v">Janusz Services</span>
+        </a>
+      </div>
+      <p class="contact-location" data-i18n="location">📍 The Hague (Den Haag), Netherlands</p>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>&copy; <span id="year"></span> Janusz Services · <span data-i18n="footerTag">The Hague</span></p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
