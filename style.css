@@ -147,17 +147,21 @@ section{padding:clamp(48px,7vw,84px) 0}
   width:7px;height:7px;background:var(--mustard);border-radius:50%;
 }
 
-/* Social buttons (see my work) */
-.about-work{margin:28px 0 14px;font-weight:800;color:var(--ink)}
-.social-btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+/* See-my-work callout band */
+.work-cta{background:var(--mustard);text-align:center}
+.work-cta-title{
+  font-family:"Kalam",cursive;font-weight:700;color:var(--ink);
+  font-size:clamp(1.9rem,4.6vw,2.7rem);margin:0 0 24px;line-height:1.1;
+}
+.social-btns{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
 .btn-social{
-  display:inline-flex;align-items:center;gap:8px;text-decoration:none;
-  font-weight:800;padding:11px 22px;border-radius:100px;
+  display:inline-flex;align-items:center;gap:10px;text-decoration:none;
+  font-weight:800;font-size:1.05rem;padding:14px 30px;border-radius:100px;
   border:2px solid var(--ink);color:var(--ink);background:#fff;
   transition:transform .12s ease, box-shadow .12s ease;
 }
-.btn-social:hover{transform:translateY(-2px)}
-.btn-ig{background:var(--ink);color:#fff;box-shadow:0 6px 16px rgba(0,0,0,.16)}
+.btn-social:hover{transform:translateY(-2px);box-shadow:0 8px 20px rgba(0,0,0,.2)}
+.btn-ig{background:var(--ink);color:#fff}
 
 /* Pricing */
 .pricing{background:var(--ink);color:#fff;text-align:center}
